@@ -1,0 +1,85 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+.logo.mqtt:hover {
+  filter: drop-shadow(0 0 2em #910591aa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.card.border {
+  border: 2px solid #61dafbaa;
+  border-radius: 1em;
+  margin-bottom: 1.4em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.mqtt span {
+  color: #b900b9;
+}
+
+li {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.8em;
+  margin-bottom: 0.6em;
+}
+
+.inputs {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 1.4em;
+}
+label {
+  display: flex;
+  gap: 0.2em;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+label span {
+  margin-left: 0.4em;
+}
+p.help {
+  color: #aaa4aa;
+}
